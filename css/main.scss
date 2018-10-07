@@ -1,0 +1,51 @@
+body {
+	padding:0;
+	margin:0;
+	font-size:14px;
+}
+.section-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+	#sectionNav {
+	  position: absolute;
+	  top: 50px;
+	  left: 50px;
+	  width: 4rem;
+	  height: 2.5rem;
+	  outline: none;
+	  background:none;
+	  padding:0;
+	  margin:0;
+	   border:0;
+	  .menubar {
+	    width: 100%;
+	    height: 0.25rem;
+	    position: absolute;
+	    background: #333;
+	    border-radius: 0.25rem;
+	    outline: none;
+	    &.one {
+	      top: 0;
+	    }
+	    &.two, &.three {
+	      top: 50%;
+	      transform: translateY(-50%);
+	    }
+	    &.four {
+	      bottom: 0;
+	    }
+	  }
+	}
+	.section-nav-text {
+		opacity:0;
+		visibility:hidden;
+		a {
+			color:#e4e4e4;
+			padding:0 30px;
+			text-decoration: none;
+			font-size:2rem;
+		}
+	}
+}
