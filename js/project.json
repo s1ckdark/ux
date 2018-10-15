@@ -1,0 +1,62 @@
+{
+    "celebratingnight": {
+        "title": "celebratingnight",
+        "hover": "https://via.placeholder.com/300x300?text=1",
+        "content": [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    "onceinabluemoon": {
+        "title": "once in a blue moon",
+        "hover": "https://via.placeholder.com/300x300?text=2",
+        "content": [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    "grandeamoret": {
+        "title": "grandeamoret",
+        "hover": "https://via.placeholder.com/300x300?text=",
+        "content": [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    "kids": {
+        "title": "kids",
+        "hover": "https://via.placeholder.com/300x300?text=4",
+        "content": [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    "dreamingofyou": {
+        "title": "dreamingofyou",
+        "hover": "https://via.placeholder.com/300x300?text=5",
+        "content": [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    "dancinginthemoonlight": {
+        "title": "dancing in the moonlight",
+        "hover": "https://via.placeholder.com/300x300?text=6",
+        "content": [
+            "",
+            "",
+            "",
+            ""
+        ]
+    }
+}
