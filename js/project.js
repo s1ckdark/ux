@@ -1,18 +1,18 @@
-var xmlhttp = new XMLHttpRequest();
-var requestURL = 'http://127.0.0.1:8080/js/project.json';
+// var xmlhttp = new XMLHttpRequest();
+// var requestURL = 'http://127.0.0.1:8080/js/project.json';
 
-xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        var  project = JSON.parse(this.responseText);
-        loadProjectTemplate(project, projects);
-    }	
-};
-xmlhttp.open("GET", requestURL, true);
-xmlhttp.send();
+// xmlhttp.onreadystatechange = function() {
+//     if (this.readyState == 4 && this.status == 200) {
+//         var project = JSON.parse(this.responseText);
+//         loadProject(project);
+//     }	
+// };
+// xmlhttp.open("GET", requestURL, true);
+// xmlhttp.send();
 
-function loadProjectTemplate(projectnm){
-	 var projectnm = projectnm.replace(/\s+/g,'');
-	 console.log(projects);
+// function loadProjectTemplate(project, projects){
+// 	 var project = JSON.stringify(project).replace(/ /g, '');
+// 	 console.log(projectnm);
      // for (var i = 0; i < projects.length; i++) {
   	// console.log(i);
     // var s = document.createElement('article');
@@ -42,4 +42,4 @@ function loadProjectTemplate(projectnm){
 
   //   section.appendChild(myArticle);
   // }
-}
+// }

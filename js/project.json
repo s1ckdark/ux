@@ -1,6 +1,7 @@
-{
-    "celebratingnight": {
+{"Items":[
+   {
         "title": "celebratingnight",
+        "img": "https://via.placeholder.com/300x300?text=1",
         "hover": "https://via.placeholder.com/300x300?text=1",
         "content": [
             "",
@@ -9,8 +10,9 @@
             ""
         ]
     },
-    "onceinabluemoon": {
+    {
         "title": "once in a blue moon",
+        "img": "https://via.placeholder.com/300x300?text=2",
         "hover": "https://via.placeholder.com/300x300?text=2",
         "content": [
             "",
@@ -19,9 +21,10 @@
             ""
         ]
     },
-    "grandeamoret": {
+    {
         "title": "grandeamoret",
-        "hover": "https://via.placeholder.com/300x300?text=",
+        "img": "https://via.placeholder.com/300x300?text=3",
+        "hover": "https://via.placeholder.com/300x300?text=3",
         "content": [
             "",
             "",
@@ -29,8 +32,9 @@
             ""
         ]
     },
-    "kids": {
+    {
         "title": "kids",
+        "img": "https://via.placeholder.com/300x300?text=4",
         "hover": "https://via.placeholder.com/300x300?text=4",
         "content": [
             "",
@@ -39,8 +43,9 @@
             ""
         ]
     },
-    "dreamingofyou": {
+    {
         "title": "dreamingofyou",
+        "img": "https://via.placeholder.com/300x300?text=5",
         "hover": "https://via.placeholder.com/300x300?text=5",
         "content": [
             "",
@@ -49,8 +54,9 @@
             ""
         ]
     },
-    "dancinginthemoonlight": {
+   {
         "title": "dancing in the moonlight",
+        "img": "https://via.placeholder.com/300x300?text=6",
         "hover": "https://via.placeholder.com/300x300?text=6",
         "content": [
             "",
@@ -59,4 +65,5 @@
             ""
         ]
     }
+]
 }
