@@ -88,6 +88,9 @@ body {
       margin: 20px;
       flex: 0 0 auto;
       display: block; }
+      #projects.page .wrapper .depth img {
+        overflow: hidden;
+        width: 100%; }
       #projects.page .wrapper .depth a {
         text-align: center;
         display: block; }

@@ -42,6 +42,7 @@ body {
 	    }
 	  }
 	}
+	
 	.section-nav-text {
 		opacity:0;
 		visibility:hidden;
@@ -100,6 +101,10 @@ body {
 				margin:20px;
 				flex: 0 0 auto;
 				display:block;
+				img {
+					overflow:hidden;
+					width:100%;
+				}
 				a {
 					text-align: center;
 					display: block;

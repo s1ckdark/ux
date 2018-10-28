@@ -23,23 +23,17 @@
 	
 	        <!-- Add your site or application content here -->
 			<div class="section-nav">
-			    <button id="sectionNav">
+			    <button id="sectionNav" v-on:click="flip()">
 			        <div class="menubar one"></div>
 			        <div class="menubar two"></div>
 			        <div class="menubar three"></div>
 			        <div class="menubar four"></div>
 			    </button>
-			    <nav class="section-nav-text">
-			    	<a href="#">PROJECT</a>
-			    	<a href="#">COLLECTION</a>
-			    	<a href="#">GALLERY</a>
-			    	<a href="#">CONTACT</a>
-			    	<div class="tweenImg">
-			    		<img src="https://via.placeholder.com/150x350?text=1" class="rotateImg"></img>
-			    		<img src="https://via.placeholder.com/150x350?text=2" class="rotateImg"></img>
-			    		<img src="https://via.placeholder.com/150x350?text=3" class="rotateImg"></img>
-			    		<img src="https://via.placeholder.com/150x350?text=4" class="rotateImg"></img>
-			    	</div>
+			    <nav class="section-nav-text" v-show="isOpen">
+			    	<a href="./project.html">PROJECT</a>
+			    	<a href="./collection.html">COLLECTION</a>
+			    	<a href="./gallery.html">GALLERY</a>
+			    	<a href="./contact.html">CONTACT</a>
 			    </nav>
 			</div>
 		    <section id="projects" class="page">
@@ -49,15 +43,15 @@
 			    <a id="closeBtn" v-on:click="closeBtn">close</a>
 			</section>
 	    </app>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.1.13/vue-resource.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/10.5.2/lazyload.min.js"></script>   
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/10.5.2/lazyload.min.js"></script>
         <script src="js/main.js"></script>
         <script src="js/project.js"></script>
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

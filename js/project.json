@@ -1,12 +1,12 @@
 {"Items":[
    {
         "title": "celebrating night",
-        "img": "https://via.placeholder.com/300x300?text=1",
-        "hover": "https://via.placeholder.com/300x300?text=1",
+        "img": "../images/celebratingnight/1.JPG",
+        "hover": "../images/celebratingnight/1.JPG",
  		 "content": [
-            "../images/celebratingnight/mainimg1.JPG",
-            "../images/celebratingnight/mainimg2.JPG",
-            "../images/celebratingnight/mainimg3.JPG",
+            "../images/celebratingnight/1.JPG",
+            "../images/celebratingnight/2.JPG",
+            "../images/celebratingnight/3.JPG",
             "https://via.placeholder.com/1600x900?text=4",
             "https://via.placeholder.com/1600x900?text=5",
             "https://via.placeholder.com/400x1000?text=6",
@@ -16,59 +16,60 @@
     },
     {
         "title": "once in a blue moon",
-        "img": "https://via.placeholder.com/300x300?text=2",
-        "hover": "https://via.placeholder.com/300x300?text=2",
+        "img": "../images/onceinabluemoon/1.jpg",
+        "hover": "../images/onceinabluemoon/1.jpg",
         "content": [
-            "../images/onceinabluemoon/mainimg.JPG",
-            "../images/onceinabluemoon/mainimg2.JPG",
-            "../images/onceinabluemoon/mainimg3.JPG",
-            "https://via.placeholder.com/300x300?text=4"
+            "../images/onceinabluemoon/1.jpg",
+            "../images/onceinabluemoon/2.jpg",
+            "../images/onceinabluemoon/3.jpg",
+            "../images/onceinabluemoon/4.jpg"
         ]
     },
     {
         "title": "grande amore",
-        "img": "https://via.placeholder.com/300x300?text=3",
-        "hover": "https://via.placeholder.com/300x300?text=3",
+        "img": "../images/grandeamore/1.jpg",
+        "hover": "../images/grandeamore/1.jpg",
         "content": [
-            "../images/granedeamore/mainimg.JPG",
-            "https://via.placeholder.com/300x300?text=2",
-            "https://via.placeholder.com/300x300?text=3",
-            "https://via.placeholder.com/300x300?text=4"
+            "../images/grandeamore/1.jpg",
+            "../images/grandeamore/2.jpg",
+            "../images/grandeamore/3.jpg",
+            "../images/grandeamore/4.jpg"           
         ]
     },
     {
         "title": "just kids",
-        "img": "https://via.placeholder.com/300x300?text=4",
-        "hover": "https://via.placeholder.com/300x300?text=4",
+        "img": "../images/justkids/seoparang_firstbd_premium/1.jpg",
+        "hover": "../images/justkids/seoparang_firstbd_premium/1.jpg",
         "content": [
-            "https://via.placeholder.com/300x300?text=1",
-            "https://via.placeholder.com/300x300?text=2",
-            "https://via.placeholder.com/300x300?text=3",
-            "https://via.placeholder.com/300x300?text=4"
+            "../images/justkids/seoparang_firstbd_premium/1.jpg",
+            "../images/justkids/seoparang_firstbd_premium/2.jpg",
+            "../images/justkids/seoparang_firstbd_premium/3.jpg",
+            "../images/justkids/seoparang_firstbd_premium/4.jpg",
+            "../images/justkids/seokparang_fristbd_f/1.jpg",
+            "../images/justkids/seokparang_fristbd_f/2.jpg",
+            "../images/justkids/seokparang_fristbd_f/3.jpg",
+            "../images/justkids/seokparang_fristbd_f/4.jpg"
         ]
     },
     {
         "title": "dreaming of you",
-        "img": "https://via.placeholder.com/300x300?text=5",
-        "hover": "https://via.placeholder.com/300x300?text=5",
+        "img": "../images/dreamingofyou/1.jpg",
+        "hover": "../images/dreamingofyou/1.jpg",
         "content": [
-            "../images/dreamingofyou/mainimg.JPG",
-            "https://via.placeholder.com/300x300?text=2",
-            "https://via.placeholder.com/300x300?text=3",
-            "https://via.placeholder.com/300x300?text=4"
+            "../images/dreamingofyou/1.jpg",
+            "../images/dreamingofyou/2.jpg",
+            "../images/dreamingofyou/3.jpg",
+            "../images/dreamingofyou/4.jpg"
         ]
     },
    {
         "title": "dancing in the moonlight",
-        "img": "https://via.placeholder.com/300x300?text=6",
-        "hover": "https://via.placeholder.com/300x300?text=6",
+        "img": "../images/dancinginthemoonlight/1.jpg",
+        "hover": "../images/dancinginthemoonlight/1.jpg",
         "content": [
-            "../images/dancingthemoonlight/mainimg.jpg",
-            "../images/dancingthemoonlight/mainimg2.jpg",
-            "../images/dancingthemoonlight/mainimg3.jpg",
-            "https://via.placeholder.com/300x300?text=2",
-            "https://via.placeholder.com/300x300?text=3",
-            "https://via.placeholder.com/300x300?text=4"
+            "../images/dancinginthemoonlight/1.jpg",
+            "../images/dancinginthemoonlight/2.jpg",
+            "../images/dancinginthemoonlight/3.jpg"
         ]
     }
 ]

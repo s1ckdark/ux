@@ -30,7 +30,10 @@
       justify-items: center;
       transition: all .3s ease;
       opacity: 0;
-      visibiliy: hidden; }
+      visibiliy: hidden;
+      max-height: 100vh;
+      max-width: 100vw;
+      overflow: hidden; }
       .page .project #projectImg .object:nth-child(4n+1) {
         width: 90%;
         height: 90%;
