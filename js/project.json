@@ -1,13 +1,17 @@
 {"Items":[
    {
-        "title": "celebratingnight",
+        "title": "celebrating night",
         "img": "https://via.placeholder.com/300x300?text=1",
         "hover": "https://via.placeholder.com/300x300?text=1",
-        "content": [
-            "",
-            "",
-            "",
-            ""
+ 		 "content": [
+            "../images/celebratingnight/mainimg1.JPG",
+            "../images/celebratingnight/mainimg2.JPG",
+            "../images/celebratingnight/mainimg3.JPG",
+            "https://via.placeholder.com/1600x900?text=4",
+            "https://via.placeholder.com/1600x900?text=5",
+            "https://via.placeholder.com/400x1000?text=6",
+            "https://via.placeholder.com/400x1000?text=7",
+            "https://via.placeholder.com/1600x900?text=8"
         ]
     },
     {
@@ -15,43 +19,43 @@
         "img": "https://via.placeholder.com/300x300?text=2",
         "hover": "https://via.placeholder.com/300x300?text=2",
         "content": [
-            "",
-            "",
-            "",
-            ""
+            "../images/onceinabluemoon/mainimg.JPG",
+            "../images/onceinabluemoon/mainimg2.JPG",
+            "../images/onceinabluemoon/mainimg3.JPG",
+            "https://via.placeholder.com/300x300?text=4"
         ]
     },
     {
-        "title": "grandeamoret",
+        "title": "grande amore",
         "img": "https://via.placeholder.com/300x300?text=3",
         "hover": "https://via.placeholder.com/300x300?text=3",
         "content": [
-            "",
-            "",
-            "",
-            ""
+            "../images/granedeamore/mainimg.JPG",
+            "https://via.placeholder.com/300x300?text=2",
+            "https://via.placeholder.com/300x300?text=3",
+            "https://via.placeholder.com/300x300?text=4"
         ]
     },
     {
-        "title": "kids",
+        "title": "just kids",
         "img": "https://via.placeholder.com/300x300?text=4",
         "hover": "https://via.placeholder.com/300x300?text=4",
         "content": [
-            "",
-            "",
-            "",
-            ""
+            "https://via.placeholder.com/300x300?text=1",
+            "https://via.placeholder.com/300x300?text=2",
+            "https://via.placeholder.com/300x300?text=3",
+            "https://via.placeholder.com/300x300?text=4"
         ]
     },
     {
-        "title": "dreamingofyou",
+        "title": "dreaming of you",
         "img": "https://via.placeholder.com/300x300?text=5",
         "hover": "https://via.placeholder.com/300x300?text=5",
         "content": [
-            "",
-            "",
-            "",
-            ""
+            "../images/dreamingofyou/mainimg.JPG",
+            "https://via.placeholder.com/300x300?text=2",
+            "https://via.placeholder.com/300x300?text=3",
+            "https://via.placeholder.com/300x300?text=4"
         ]
     },
    {
@@ -59,10 +63,12 @@
         "img": "https://via.placeholder.com/300x300?text=6",
         "hover": "https://via.placeholder.com/300x300?text=6",
         "content": [
-            "",
-            "",
-            "",
-            ""
+            "../images/dancingthemoonlight/mainimg.jpg",
+            "../images/dancingthemoonlight/mainimg2.jpg",
+            "../images/dancingthemoonlight/mainimg3.jpg",
+            "https://via.placeholder.com/300x300?text=2",
+            "https://via.placeholder.com/300x300?text=3",
+            "https://via.placeholder.com/300x300?text=4"
         ]
     }
 ]

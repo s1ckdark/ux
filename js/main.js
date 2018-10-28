@@ -21,6 +21,7 @@ var flipTheBurger = new TimelineMax({paused:true, reversed:true})
 
 document.getElementById('sectionNav').onclick = function(e){
   flipTheBurger.reversed() ? flipTheBurger.play() : flipTheBurger.reverse();
+  rotateImgTween.play();
 }
 
 var rotateImg = document.getElementsByClassName('rotateImg');
@@ -35,32 +36,3 @@ var lazyload= new LazyLoad({
     elements_selector: ".lazyload"
 });
 
-Vue.component('projects-component', {
-  template: ` 
-	<div class="depth">
-		<img :src="project.img"></img>
-		<a>{{ project.title }}</a>
-	</div>
-`,
-  props: {
-    project: Object
-  }
-});
-
-let projectsNavi = new Vue({
-  el: '#projectsNavi',
-  data() {
-    return {
-      projects: []
-    }
-  },
-  created() {
-    const url = 'http://127.0.0.1:8080/js/project.json';
-    this.$http.get(url).then(data => {
-      const items = JSON.parse(data.response).Items;
-      items.map(item => {
-        this.projects.push(item)
-      })
-    })
-  }
-})

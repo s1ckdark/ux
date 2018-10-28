@@ -1,45 +1,98 @@
-// var xmlhttp = new XMLHttpRequest();
-// var requestURL = 'http://127.0.0.1:8080/js/project.json';
+Vue.component('projects-component', {
+  template: `<div class="depth">
+		<img :src="project.img"></img>
+		<a v-on:click="loadProject(project.title)">{{ project.title }}</a>
+		</div>
+	`,
+  props: {
+    project: Object,
+  },
+ methods: {
+    loadProject: function (projectNm) {
+    	console.log("load");
+    	let closeBtn = document.getElementById('closeBtn');
+    	closeBtn.style.display = "block";
+    	let projectTrim = projectNm.replace(/ /g, '');
+    	let pnm = document.getElementById(projectTrim);
+    	let projectDiv = document.getElementById("projects");
 
-// xmlhttp.onreadystatechange = function() {
-//     if (this.readyState == 4 && this.status == 200) {
-//         var project = JSON.parse(this.responseText);
-//         loadProject(project);
-//     }	
-// };
-// xmlhttp.open("GET", requestURL, true);
-// xmlhttp.send();
+    	var projectId = document.createElement("div");
+    	projectId.setAttribute("id",projectTrim);
+    	projectId.setAttribute("class","project");
+    	var heading = document.createElement("h1");
+		var headingText = document.createTextNode(projectNm);
+		heading.appendChild(headingText);
+		projectId.appendChild(heading);
+		projectDiv.appendChild(projectId);
+		var image = document.createElement("div");
+		image.setAttribute("id","projectImg");
+		projectId.appendChild(image);
+		this.project.content.map(function(img){
+			var imageInsert = document.createElement("img");
+			imageInsert.setAttribute("class","object");
+			imageInsert.setAttribute("src",img);
+			image.appendChild(imageInsert);
+		})
 
-// function loadProjectTemplate(project, projects){
-// 	 var project = JSON.stringify(project).replace(/ /g, '');
-// 	 console.log(projectnm);
-     // for (var i = 0; i < projects.length; i++) {
-  	// console.log(i);
-    // var s = document.createElement('article');
-  //   var myH2 = document.createElement('h2');
-  //   var myPara1 = document.createElement('p');
-  //   var myPara2 = document.createElement('p');
-  //   var myPara3 = document.createElement('p');
-  //   var myList = document.createElement('ul');
+		var navi = document.createElement("div");
+		navi.setAttribute("id","projectNavi");
+		var prev = document.createElement("div");
+		var prevText = document.createTextNode("prev");
+		prev.appendChild(prevText);
+		prev.setAttribute("id","prev");
+		var returnback = document.createElement("div");
+		var returnbackText = document.createTextNode("return");
+		returnback.appendChild(returnbackText);
+		returnback.setAttribute("id","returnback");
+		var next = document.createElement("div");
+		var nextText = document.createTextNode("next");
+		next.appendChild(nextText);
+		next.setAttribute("id","next");
+		projectId.appendChild(navi);
+		navi.appendChild(prev);
+		navi.appendChild(returnback);
+		navi.appendChild(next);
 
-  //   myH2.textContent = heroes[i].name;
-  //   myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
-  //   myPara2.textContent = 'Age: ' + heroes[i].age;
-  //   myPara3.textContent = 'Superpowers:';
-        
-  //   var superPowers = heroes[i].powers;
-  //   for (var j = 0; j < superPowers.length; j++) {
-  //     var listItem = document.createElement('li');
-  //     listItem.textContent = superPowers[j];
-  //     myList.appendChild(listItem);
-  //   }
+		var controller = new ScrollMagic.Controller();
+		var object = document.querySelectorAll('.object');
+		object.forEach(function(obj){
+		new ScrollMagic.Scene({
+			triggerElement:obj,
+			triggerHook: 'onEnter'
+		})
+		.setTween(obj,.5,{autoAlpha:1,top:'-50px'})
+		.addIndicators()
+		.addTo(controller);
+		})
+  	}
+}
+});
 
-  //   myArticle.appendChild(myH2);
-  //   myArticle.appendChild(myPara1);
-  //   myArticle.appendChild(myPara2);
-  //   myArticle.appendChild(myPara3);
-  //   myArticle.appendChild(myList);
 
-  //   section.appendChild(myArticle);
-  // }
-// }
+
+let projectsNavi = new Vue({
+  el: 'app',
+  data() {
+    return {
+      projects: []
+    }
+  },
+  created() {
+    const url = 'http://127.0.0.1:8080/js/project.json';
+    this.$http.get(url).then(data => {
+      const items = JSON.parse(data.response).Items;
+      items.map(item => {
+        this.projects.push(item)
+      })
+    })
+  },
+  methods:{
+  	closeBtn: function(){
+	    // Removes an element from the document
+	    console.log("close");
+	    var element = document.getElementsByClassName('project');
+	    element[0].parentNode.removeChild(element[0]);
+	    closeBtn.style.display="none";
+  	}
+  }
+})
