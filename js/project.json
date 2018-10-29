@@ -1,12 +1,12 @@
 {"Items":[
    {
         "title": "celebrating night",
-        "img": "../images/celebratingnight/1.JPG",
-        "hover": "../images/celebratingnight/1.JPG",
+        "img": "../images/celebratingnight/1.jpg",
+        "hover": "../images/celebratingnight/1.jpg",
  		 "content": [
-            "../images/celebratingnight/1.JPG",
-            "../images/celebratingnight/2.JPG",
-            "../images/celebratingnight/3.JPG",
+            "../images/celebratingnight/1.jpg",
+            "../images/celebratingnight/2.jpg",
+            "../images/celebratingnight/3.jpg",
             "https://via.placeholder.com/1600x900?text=4",
             "https://via.placeholder.com/1600x900?text=5",
             "https://via.placeholder.com/400x1000?text=6",
