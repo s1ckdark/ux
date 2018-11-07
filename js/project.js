@@ -9,7 +9,6 @@ Vue.component('projects-component', {
   },
  methods: {
     loadProject: function (projectNm) {
-    	console.log("load");
     	let closeBtn = document.getElementById('closeBtn');
     	closeBtn.style.display = "block";
     	let projectTrim = projectNm.replace(/ /g, '');
@@ -33,6 +32,9 @@ Vue.component('projects-component', {
 			imageInsert.setAttribute("src",img);
 			image.appendChild(imageInsert);
 		})
+		document.getElementById('projectsNavi').style.visibility="hidden";
+
+		window.scrollTo(0,0);
 
 		var navi = document.createElement("div");
 		navi.setAttribute("id","projectNavi");
@@ -89,9 +91,10 @@ let projectsNavi = new Vue({
   methods:{
   	closeBtn: function(){
 	    // Removes an element from the document
-	    console.log("close");
 	    var element = document.getElementsByClassName('project');
 	    element[0].parentNode.removeChild(element[0]);
+	    document.getElementById('projectsNavi').style.visibility="visible";
+	    // document.querySelectorAll('.depth').onClock = hNavi.destroy(false);
 	    closeBtn.style.display="none";
   	}
   },
@@ -117,10 +120,38 @@ let projectsNavi = new Vue({
 		    .to(navi, duration, {width:'100%',height:'100%',backgroundColor:'#121212',position:'fixed'}, 0.2)
 		    .to(naviText, duration, {autoAlpha:1}, 0.5);
 
-		  document.getElementById('sectionNav').onclick = function(e){
-		flipTheBurger.reversed() ? flipTheBurger.play() : flipTheBurger.reverse();
-	
-		  // rotateImgTween.play();
+		document.getElementById('sectionNav').onclick = function(e){
+			flipTheBurger.reversed() ? flipTheBurger.play() : flipTheBurger.reverse();
 		}
+		
+		// rotateImgTween.play();
+
+  },
+  updated(){
+	var depth = document.querySelectorAll('.depth');
+	TweenMax.set(depth, {left:"100%"});
+	var depthTween = new TimelineMax({paused:true, revered:true});
+	depth.forEach(function(e,i){
+		depthTween.to(e, 2, {left:"0%",autoAlpha:1},2)
+	})
+	depthTween.play();
+
+	var hScroll = document.querySelector('#setpin').offsetWidth;	
+	var controller = new ScrollMagic.Controller();
+
+	var horizontalSlide = new TimelineMax()
+	// animate panels
+	.to("#setpin", 1, {x: -hScroll})	
+
+	// create scene to pin and link animation
+	var hNavi = new ScrollMagic.Scene({
+	triggerElement: "#setpin",
+	triggerHook: "onCenter",
+	duration: (depth.length-4)*hScroll
+	})
+	.setPin("#setpin")
+	.setTween(horizontalSlide)
+	.addIndicators() // add indicators (requires plugin)
+	.addTo(controller);
   }
 })

@@ -1,75 +1,103 @@
 {"Items":[
    {
         "title": "celebrating night",
-        "img": "../images/celebratingnight/1.jpg",
-        "hover": "../images/celebratingnight/1.jpg",
+        "img": "../images/celebratingnight/2.jpg",
+        "hover": "../images/celebratingnight/2.jpg",
  		 "content": [
             "../images/celebratingnight/1.jpg",
             "../images/celebratingnight/2.jpg",
             "../images/celebratingnight/3.jpg",
-            "https://via.placeholder.com/1600x900?text=4",
-            "https://via.placeholder.com/1600x900?text=5",
-            "https://via.placeholder.com/400x1000?text=6",
-            "https://via.placeholder.com/400x1000?text=7",
-            "https://via.placeholder.com/1600x900?text=8"
+            "../images/celebratingnight/4.jpg",
+            "../images/celebratingnight/5.jpg",
+            "../images/celebratingnight/6.jpg",
+            "../images/celebratingnight/7.jpg",
+            "../images/celebratingnight/8.jpg",
+            "../images/celebratingnight/9.jpg",
+            "../images/celebratingnight/10.jpg",
+            "../images/celebratingnight/11.jpg",
+            "../images/celebratingnight/12.jpg",
+            "../images/celebratingnight/13.jpg",
+            "../images/celebratingnight/14.jpg",
+            "../images/celebratingnight/15.jpg",
+            "../images/celebratingnight/16.jpg",
+            "../images/celebratingnight/17.jpg",
+            "../images/celebratingnight/18.jpg"
         ]
     },
     {
         "title": "once in a blue moon",
-        "img": "../images/onceinabluemoon/1.jpg",
-        "hover": "../images/onceinabluemoon/1.jpg",
+        "img": "../images/onceinabluemoon/2.jpg",
+        "hover": "../images/onceinabluemoon/2.jpg",
         "content": [
             "../images/onceinabluemoon/1.jpg",
             "../images/onceinabluemoon/2.jpg",
             "../images/onceinabluemoon/3.jpg",
-            "../images/onceinabluemoon/4.jpg"
+            "../images/onceinabluemoon/4.jpg",
+            "../images/onceinabluemoon/5.jpg",
+            "../images/onceinabluemoon/6.jpg",
+            "../images/onceinabluemoon/7.jpg",
+            "../images/onceinabluemoon/8.jpg",
+            "../images/onceinabluemoon/9.jpg",
+            "../images/onceinabluemoon/10.jpg",
+            "../images/onceinabluemoon/11.jpg",
+            "../images/onceinabluemoon/12.jpg",
+            "../images/onceinabluemoon/13.jpg",
+            "../images/onceinabluemoon/14.jpg",
+            "../images/onceinabluemoon/15.jpg",
+            "../images/onceinabluemoon/16.jpg"
         ]
     },
     {
         "title": "grande amore",
-        "img": "../images/grandeamore/1.jpg",
-        "hover": "../images/grandeamore/1.jpg",
+        "img": "../images/grandeamore/2.jpg",
+        "hover": "../images/grandeamore/2.jpg",
         "content": [
             "../images/grandeamore/1.jpg",
             "../images/grandeamore/2.jpg",
             "../images/grandeamore/3.jpg",
-            "../images/grandeamore/4.jpg"           
-        ]
-    },
-    {
-        "title": "just kids",
-        "img": "../images/justkids/seoparang_firstbd_premium/1.jpg",
-        "hover": "../images/justkids/seoparang_firstbd_premium/1.jpg",
-        "content": [
-            "../images/justkids/seoparang_firstbd_premium/1.jpg",
-            "../images/justkids/seoparang_firstbd_premium/2.jpg",
-            "../images/justkids/seoparang_firstbd_premium/3.jpg",
-            "../images/justkids/seoparang_firstbd_premium/4.jpg",
-            "../images/justkids/seokparang_fristbd_f/1.jpg",
-            "../images/justkids/seokparang_fristbd_f/2.jpg",
-            "../images/justkids/seokparang_fristbd_f/3.jpg",
-            "../images/justkids/seokparang_fristbd_f/4.jpg"
+            "../images/grandeamore/4.jpg",         
+            "../images/grandeamore/5.jpg",         
+            "../images/grandeamore/6.jpg",         
+            "../images/grandeamore/7.jpg",         
+            "../images/grandeamore/8.jpg",         
+            "../images/grandeamore/9.jpg",         
+            "../images/grandeamore/10.jpg"         
         ]
     },
     {
         "title": "dreaming of you",
-        "img": "../images/dreamingofyou/1.jpg",
-        "hover": "../images/dreamingofyou/1.jpg",
+        "img": "../images/dreamingofyou/2.jpg",
+        "hover": "../images/dreamingofyou/2.jpg",
         "content": [
             "../images/dreamingofyou/1.jpg",
             "../images/dreamingofyou/2.jpg",
             "../images/dreamingofyou/3.jpg",
-            "../images/dreamingofyou/4.jpg"
+            "../images/dreamingofyou/4.jpg",
+            "../images/dreamingofyou/5.jpg",
+            "../images/dreamingofyou/6.jpg",
+            "../images/dreamingofyou/7.jpg",
+            "../images/dreamingofyou/8.jpg",
+            "../images/dreamingofyou/9.jpg",
+            "../images/dreamingofyou/10.jpg"
         ]
     },
    {
         "title": "dancing in the moonlight",
-        "img": "../images/dancinginthemoonlight/1.jpg",
-        "hover": "../images/dancinginthemoonlight/1.jpg",
+        "img": "../images/dancinginthemoonlight/2.jpg",
+        "hover": "../images/dancinginthemoonlight/2.jpg",
         "content": [
             "../images/dancinginthemoonlight/1.jpg",
             "../images/dancinginthemoonlight/2.jpg",
-            "../images/dancinginthemoonlight/3.jpg"
+            "../images/dancinginthemoonlight/3.jpg",
+            "../images/dancinginthemoonlight/4.jpg",
+            "../images/dancinginthemoonlight/5.jpg",
+            "../images/dancinginthemoonlight/6.jpg",
+            "../images/dancinginthemoonlight/7.jpg",
+            "../images/dancinginthemoonlight/8.jpg",
+            "../images/dancinginthemoonlight/9.jpg",
+            "../images/dancinginthemoonlight/10.jpg",
+            "../images/dancinginthemoonlight/11.jpg",
+            "../images/dancinginthemoonlight/12.jpg"
         ]
     }
 ]
