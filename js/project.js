@@ -1,39 +1,37 @@
+window.onbeforeunload = function(){ window.scrollTo(0,0); } 
 Vue.component('projects-component', {
   template: `<div class="depth">
 		<img :src="project.img"></img>
-		<a v-on:click="loadProject(project.title)">{{ project.title }}</a>
+		<a v-on:click="loadProject(project.index)">{{ project.title }}</a>
 		</div>
 	`,
   props: {
-    project: Object,
+    project: Object
   },
  methods: {
-    loadProject: function (projectNm) {
+    loadProject: function (projectIndex) {
     	let closeBtn = document.getElementById('closeBtn');
     	closeBtn.style.display = "block";
-    	let projectTrim = projectNm.replace(/ /g, '');
+    	let projectTrim = this.project.title.replace(/ /g, '');
     	let pnm = document.getElementById(projectTrim);
     	let projectDiv = document.getElementById("projects");
 
     	var projectId = document.createElement("div");
     	projectId.setAttribute("id",projectTrim);
     	projectId.setAttribute("class","project");
-    	var heading = document.createElement("h1");
-		var headingText = document.createTextNode(projectNm);
-		heading.appendChild(headingText);
-		projectId.appendChild(heading);
+
 		projectDiv.appendChild(projectId);
 		var image = document.createElement("div");
 		image.setAttribute("id","projectImg");
 		projectId.appendChild(image);
-		this.project.content.map(function(img){
+		this.project.content.map(function(img,index){
 			var imageInsert = document.createElement("img");
 			imageInsert.setAttribute("class","object");
 			imageInsert.setAttribute("src",img);
+			imageInsert.setAttribute("title",index);
 			image.appendChild(imageInsert);
 		})
 		document.getElementById('projectsNavi').style.visibility="hidden";
-
 		window.scrollTo(0,0);
 
 		var navi = document.createElement("div");
@@ -50,10 +48,31 @@ Vue.component('projects-component', {
 		var nextText = document.createTextNode("next");
 		next.appendChild(nextText);
 		next.setAttribute("id","next");
+    	var heading = document.createElement("h1");
+		var headingText = document.createTextNode(this.project.title);
+		heading.appendChild(headingText);
 		projectId.appendChild(navi);
 		navi.appendChild(prev);
 		navi.appendChild(returnback);
 		navi.appendChild(next);
+		navi.appendChild(heading);
+
+		next.addEventListener("click",function(){
+				console.log(projectIndex+1);
+		})
+		prev.addEventListener("click",function(){
+				console.log(projectIndex-1);
+		})
+		returnback.addEventListener("click",function(){
+		    var element = document.getElementsByClassName('project');
+		    console.log(element);
+		    element[0].parentNode.removeChild(element[0]);
+		    document.getElementById('projectsNavi').style.visibility="visible";
+		    // document.querySelectorAll('.depth').onClock = hNavi.destroy(false);
+		    window.scrollTo(0,0);
+		    closeBtn.style.display="none";
+		});
+
 
 		var controller = new ScrollMagic.Controller();
 		var object = document.querySelectorAll('.object');
@@ -67,10 +86,8 @@ Vue.component('projects-component', {
 		.addTo(controller);
 		})
   	}
-}
+  }
 });
-
-
 
 let projectsNavi = new Vue({
   el: 'app',
@@ -92,12 +109,15 @@ let projectsNavi = new Vue({
   	closeBtn: function(){
 	    // Removes an element from the document
 	    var element = document.getElementsByClassName('project');
+	    console.log(element);
 	    element[0].parentNode.removeChild(element[0]);
 	    document.getElementById('projectsNavi').style.visibility="visible";
 	    // document.querySelectorAll('.depth').onClock = hNavi.destroy(false);
+	    window.scrollTo(0,0);
 	    closeBtn.style.display="none";
   	}
   },
+
   mounted: function(){
   		// variables
 		var navi = document.getElementsByClassName('section-nav'),
@@ -124,10 +144,40 @@ let projectsNavi = new Vue({
 			flipTheBurger.reversed() ? flipTheBurger.play() : flipTheBurger.reverse();
 		}
 		
-		// rotateImgTween.play();
 
+		// rotateImgTween.play();
   },
   updated(){
+//   	var owl = $('.owl-carousel');
+// owl.owlCarousel({
+//     rewind: true,
+//     margin:30,
+//     items: 1,
+//     loop: false,
+//        responsive:{
+//         0:{
+//             items:1
+//         },
+//         600:{
+//             items:3
+//         },            
+//         960:{
+//             items:4
+//         },
+//         1200:{
+//             items:4
+//         }
+//     }
+// });
+// // owl.on('mousewheel', '.owl-stage', function (e) {
+// //     if (e.deltaY>0) {
+// //         owl.trigger('next.owl');
+// //     } else {
+// //         owl.trigger('prev.owl');
+// //     }
+// //     e.preventDefault();
+// // });
+
 	var depth = document.querySelectorAll('.depth');
 	TweenMax.set(depth, {left:"100%"});
 	var depthTween = new TimelineMax({paused:true, revered:true});
@@ -135,6 +185,7 @@ let projectsNavi = new Vue({
 		depthTween.to(e, 2, {left:"0%",autoAlpha:1},2)
 	})
 	depthTween.play();
+
 
 	var hScroll = document.querySelector('#setpin').offsetWidth;	
 	var controller = new ScrollMagic.Controller();
@@ -147,11 +198,12 @@ let projectsNavi = new Vue({
 	var hNavi = new ScrollMagic.Scene({
 	triggerElement: "#setpin",
 	triggerHook: "onCenter",
-	duration: (depth.length-4)*hScroll
+	duration: hScroll
 	})
 	.setPin("#setpin")
 	.setTween(horizontalSlide)
 	.addIndicators() // add indicators (requires plugin)
 	.addTo(controller);
+
   }
 })
